@@ -11,6 +11,7 @@ $gradient: linear-gradient(90deg, var($dark), var($primary));
 //color-sub
 $white:#fff;
 $transparent: transparent;
+$boxshadow:0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 
 //font 
 $m: 'Monda';
@@ -22,10 +23,15 @@ $fsnv:1.5rem; //navbar
 $fslabel:3rem; //label
 $fssidelink:15px;
 
-//size 
+//size
+$pdt: 7.5rem;
+$pdb:2rem;
 $pd: 1rem; //padding
+$mlnav: 5rem;
 $pdlogo: 10px 0px;
 $mllogo: -20px;
+$wsidelink: 50px;
+$hsidelink: 50px;
 
 //sidebar 
 $zi: 1000;
