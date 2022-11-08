@@ -2,9 +2,125 @@
 *{
     font-family: $m,$ss;
     margin: 0;
-    padding: 0;
+    padding:0;
     box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
 }
+*::section{
+    background-color: $dark;
+    color: $white;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+
+body {
+    background: $white;
+}
+
+section { 
+    min-height: 50vh;
+    padding: 0 9%;
+    padding-top: $pdt;
+    padding-bottom: $pdb;
+}
+
+.heading {
+    text-align: center;
+    background: $gradient;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: $fsheading;
+    text-transform: uppercase;
+    padding: $pd;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: $white;
+    box-shadow: $boxshadow;
+    padding: $pd 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+} 
+header.navbar a {
+    font-size: $fsnv;
+    margin-left: $mlnav;
+    font-weight: bold;
+    color: $primary;
+}
+
+header.navbar a:hover {
+    color: $light;
+}
+
+header input {
+    display: none;
+}
+header label {
+    font-size: $fslabel;
+    color: $primary;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.logo {
+    font-size: large;
+    font-weight: bold;
+    padding: $pdlogo;
+    margin-left: $mllogo;
+}
+
+.logo span {
+    color: $primary;
+}
+
+.sidebar {
+    z-index: $zi;
+    position: fixed;
+    top: 30%;
+    transform: translateY(-30%);
+    background-color: $primary;
+    box-shadow: $bs;
+  }
+
+  .side-item {
+    position: relative;
+  }
+
+  .side-item:not(:last-child) {
+    margin-bottom: 20px;
+  } 
+
+  .side-link {
+    color: $white;
+    text-decoration: none;
+    font-size: $fssidelink;
+  }
+
+  .side-link i {
+    width: $wsidelink;
+    height: $hsidelink;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary;
+    transition: all 0.3s;
+  }
+
+  
 
 
   
